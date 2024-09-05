@@ -1,0 +1,122 @@
+/* Container for the movie details */
+.movie-info {
+  background-color: #f4f4f4; /* Light background color */
+  padding: 25px;
+  border-radius: 10px;
+  min-height: 100vh; /* Center the container */
+  margin: 20px auto; /* Add top and bottom margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  padding-left: 50px;
+}
+
+/* Main heading */
+.movie-info h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Movie title */
+.movie-details-title {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Container for the image and ratings */
+.movie-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Movie poster image */
+.movie-image {
+  width: 300px;
+  height: 300px; /* Aspect ratio for the poster */
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ratings text */
+.rating {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+/* General paragraph styling */
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Labels for specific data fields */
+p span {
+  font-weight: bold;
+  color: #333;
+}
+.overview {
+  width: 70%;
+}
+.cast-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.cast-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.cast-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+}
+.character {
+  font-size: 14px;
+}
+.originalName {
+  margin: 0;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .movie-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .movie-image {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px; /* Adjusted size for smaller screens */
+  }
+
+  .rating {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller text on mobile */
+  }
+}

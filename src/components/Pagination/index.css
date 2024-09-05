@@ -1,0 +1,22 @@
+.control-btn {
+  border: 1px solid #fff;
+  padding: 12px 24px;
+  font-family: 'Roboto';
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.page-no {
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid black;
+  padding: 8px 16px;
+}
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
